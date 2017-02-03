@@ -14,7 +14,7 @@ namespace Nortwind.Bussiness.Abstract
         List<Product> GetAll(ProductFilter productFilter);
         Product GetById(int id);
         List<Product> GetByCategory(int categoryId);
-        List<Product> GetByProductName(int categoryId);
+        List<Product> GetByProductName(string productName);
         void Add(Product product);
         void Update(Product product);
         void Delete(Product product);
