@@ -11,6 +11,12 @@
         @foreach (var product in Model.Products)
         {
             <tr>
+                <td>
+                    @Html.ActionLink(" ", "Delete", new { Id = product.Id },
+                   new {onclick="return confirm('Are you sure to delete this product?')", @class = "glyphicon glyphicon-trash" })
+                    @Html.ActionLink(" ", "Update", new { Id=product.Id},new { @class= "glyphicon glyphicon-pencil" })
+                    
+                </td>
                 <td>@product.ProductName</td>
                 <td>@product.QuantityPerUnit</td>
                 <td>@string.Format("{0:C}", product.UnitPrice)</td>
@@ -28,7 +34,7 @@
 
 
 </div>
-<div class="col-lg-10">
+<div>
 
     @Html.Pager(Model.PageInfo)
 </div>

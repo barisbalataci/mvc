@@ -14,7 +14,7 @@ namespace Nortwind.MvcWebUI.HtmlHelpers
         {
             var stringBuilder = new StringBuilder();
 
-            stringBuilder.Append("<ul class='pagination pull-left'>");
+            stringBuilder.Append("<ul class='pagination pull-right'>");
 
             if (pagingInfo.CurrentPage != 1)
             {

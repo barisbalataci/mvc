@@ -51,8 +51,7 @@ namespace Nortwind.MvcWebUI.Controllers
         public ActionResult Add()
         {
             return View(new ProductAddViewModel
-            {
-                
+            {                
                 Categories = _categoryService.GetAll().Select(item=>new SelectListItem()
                 { Text=item.CategoryName,Value=item.Id.ToString()}).ToList()
             });
@@ -64,5 +63,30 @@ namespace Nortwind.MvcWebUI.Controllers
             _productService.Add(product);
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public ActionResult Update(int id)
+        {
+            return View(new ProductAddViewModel
+            {
+                Product=_productService.GetById(id),
+                Categories = _categoryService.GetAll().Select(item => new SelectListItem()
+                { Text = item.CategoryName, Value = item.Id.ToString() }).ToList()
+            });
+        }
+
+        [HttpPost]
+        public ActionResult Update(Product product)
+        {
+            _productService.Update(product);
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult Delete(int id)
+        {
+            _productService.Delete(new Product { Id = id });
+            return RedirectToAction("Index");
+        }
+
     }
 }

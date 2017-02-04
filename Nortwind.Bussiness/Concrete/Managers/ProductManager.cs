@@ -84,7 +84,7 @@ namespace Nortwind.Bussiness.Concrete.Managers
         public void Update(Product product)
         {
             FluentValidatorTool.Validate(new ProductValidator(), product);
-            ProductNameCheck(product);
+            //ProductNameCheck(product);
             _productDal.Update(product);
         }
     }
