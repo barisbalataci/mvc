@@ -10,7 +10,7 @@ using Nortwind.Entities.ComplexType;
 
 namespace Nortwind.DataAcces.Concrete.EntityFramework
 {
-    class EfProductDal : EfEntitityRepositoryBase<Product, NortwindContext>, IProductDal
+    public class EfProductDal : EfEntitityRepositoryBase<Product, NortwindContext>, IProductDal
     {
         public List<ProductDetail> GetProductDetails()
         {

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace Nortwind.DataAcces.Concrete.EntityFramework
 {
+    
     public class EfUserDal: EfEntitityRepositoryBase<User, NortwindContext>, IUserDal
     {
     }
