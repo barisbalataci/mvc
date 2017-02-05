@@ -8,6 +8,7 @@
 <div class="col-md-10">
     @using (Html.BeginForm())
     {
+        @Html.AntiForgeryToken()
         <div class="form-group">
             @Html.LabelFor(m=>Model.Product.ProductName,"ProductName")
             @Html.TextBoxFor(m=>Model.Product.ProductName,new { @class="form-control"})

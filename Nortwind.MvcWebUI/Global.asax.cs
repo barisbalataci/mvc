@@ -6,6 +6,8 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using FluentValidation.Mvc;
+using Nortwind.MvcWebUI.Controllers;
 
 namespace Nortwind.MvcWebUI
 {
@@ -18,6 +20,13 @@ namespace Nortwind.MvcWebUI
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory());
+
+            FluentValidationModelValidatorProvider.Configure(provider =>
+            {
+                provider.ValidatorFactory = new FlentValitorFactory();
+                provider.AddImplicitRequiredValidator = false;
+            });
+
         }
     }
 }

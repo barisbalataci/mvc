@@ -14,6 +14,7 @@ using System.Web.Mvc;
 
 namespace Nortwind.MvcWebUI.Controllers
 {
+    [Authorize]
     public class ProductController : Controller
     {
         private IProductService _productService;
@@ -23,7 +24,9 @@ namespace Nortwind.MvcWebUI.Controllers
             _productService = productService;
             _categoryService = categoryService;
         }
-        int pageSize = 10;
+        public int pageSize = 10;
+
+        [AllowAnonymous]
         public ActionResult Index(int? categoryId, int page=1)
         {
 
@@ -58,9 +61,11 @@ namespace Nortwind.MvcWebUI.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Add(Product product)
         {
             _productService.Add(product);
+            TempData.Add("Message", "The Product was succesfully added");
             return RedirectToAction("Index");
         }
 
@@ -76,15 +81,18 @@ namespace Nortwind.MvcWebUI.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Update(Product product)
         {
             _productService.Update(product);
+            TempData.Add("Message", "The Product was succesfully apdated");
             return RedirectToAction("Index");
         }
 
         public ActionResult Delete(int id)
         {
             _productService.Delete(new Product { Id = id });
+            TempData.Add("Message", "The Product was succesfully deleted");
             return RedirectToAction("Index");
         }
 

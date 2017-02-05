@@ -23,6 +23,8 @@ namespace Nortwind.MvcWebUI.DependencyResolver
             _kernel.Bind<IProductDal>().To<EfProductDal>().InSingletonScope();
             _kernel.Bind<ICategoryService>().To<CategoryManager>().InSingletonScope();
             _kernel.Bind<ICategoryDal>().To<EfCategoryDal>().InSingletonScope();
+            _kernel.Bind<IUserService>().To<UserManager>().InSingletonScope();
+            _kernel.Bind<IUserDal>().To<EfUserDal>().InSingletonScope();
         }
         protected override IController GetControllerInstance(RequestContext requestContext, Type controllerType)
         {

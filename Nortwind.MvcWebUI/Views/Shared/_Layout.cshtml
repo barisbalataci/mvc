@@ -7,6 +7,9 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -36,6 +39,15 @@
                     Html.RenderAction("List", "Category");
                 }
             </div>
+            @if (TempData["Message"] != null)
+            {
+                <div class="col-md-10 alert alert-warning" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <strong>Hey!</strong>@TempData["Message"]
+                </div>
+            }
             @RenderBody()
             <hr />
             <footer>
