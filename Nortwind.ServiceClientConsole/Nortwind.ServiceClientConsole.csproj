@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8DF2150D-177D-4D15-932A-E8B8567BBB90}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{FA4AED38-C67F-485D-A26E-1F2CD2FE38F8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Nortwind.Bussiness</RootNamespace>
-    <AssemblyName>Nortwind.Bussiness</AssemblyName>
+    <RootNamespace>Nortwind.ServiceClientConsole</RootNamespace>
+    <AssemblyName>Nortwind.ServiceClientConsole</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -30,15 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FluentValidation, Version=6.2.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FluentValidation.6.2.1.0\lib\Net45\FluentValidation.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
@@ -49,30 +45,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\ICategoryService.cs" />
-    <Compile Include="Abstract\IProductService.cs" />
-    <Compile Include="Abstract\IUserService.cs" />
-    <Compile Include="Concrete\Managers\CategoryManager.cs" />
-    <Compile Include="Concrete\Managers\ProductManager.cs" />
-    <Compile Include="Concrete\Managers\UserManager.cs" />
-    <Compile Include="DependencyResolver\Ninject\BusinessModule.cs" />
-    <Compile Include="DependencyResolver\Ninject\InstanceFactory.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ValidationRules\FluentValidation\FluentValidatorTool.cs" />
-    <Compile Include="ValidationRules\FluentValidation\ProductValidator.cs" />
+    <Compile Include="WcfProxy.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Nortwind.DataAcces\Nortwind.DataAccess.csproj">
-      <Project>{966F79A9-005E-4C9A-A7C2-106330F9BA0E}</Project>
-      <Name>Nortwind.DataAccess</Name>
+    <ProjectReference Include="..\Nortwind.Bussiness\Nortwind.Bussiness.csproj">
+      <Project>{8DF2150D-177D-4D15-932A-E8B8567BBB90}</Project>
+      <Name>Nortwind.Bussiness</Name>
     </ProjectReference>
     <ProjectReference Include="..\Nortwind.Entities\Nortwind.Entities.csproj">
       <Project>{73109448-4174-4158-87E2-A905EE7EFD47}</Project>
       <Name>Nortwind.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
