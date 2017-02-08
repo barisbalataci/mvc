@@ -45,7 +45,8 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProductService.cs" />
+    <Compile Include="ProductService1.cs" />
+    <Compile Include="IProductService1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -55,6 +56,10 @@
     <ProjectReference Include="..\Nortwind.Bussiness\Nortwind.Bussiness.csproj">
       <Project>{8DF2150D-177D-4D15-932A-E8B8567BBB90}</Project>
       <Name>Nortwind.Bussiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nortwind.DataAcces\Nortwind.DataAccess.csproj">
+      <Project>{966F79A9-005E-4C9A-A7C2-106330F9BA0E}</Project>
+      <Name>Nortwind.DataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\Nortwind.Entities\Nortwind.Entities.csproj">
       <Project>{73109448-4174-4158-87E2-A905EE7EFD47}</Project>

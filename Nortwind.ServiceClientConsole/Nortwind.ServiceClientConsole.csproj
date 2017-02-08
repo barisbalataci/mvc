@@ -61,6 +61,10 @@
       <Project>{73109448-4174-4158-87E2-A905EE7EFD47}</Project>
       <Name>Nortwind.Entities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Service\Nortwind.Service.csproj">
+      <Project>{A64781C1-8B4A-46E4-ABEB-79ECA2196AFB}</Project>
+      <Name>Nortwind.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

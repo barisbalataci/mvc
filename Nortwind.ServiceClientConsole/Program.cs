@@ -1,5 +1,6 @@
-﻿using Nortwind.Bussiness.Abstract;
+﻿
 using Nortwind.Entities.Concrete;
+using Nortwind.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace Nortwind.ServiceClientConsole
     {
         static void Main(string[] args)
         {
-           Product  product= WcfProxy<IProductService>.CreateChannel().GetById(1);
+           Product  product= WcfProxy<IProductService1>.CreateChannel().GetById(1);
             Console.WriteLine(product.ProductName);
             Console.ReadLine();
         }
