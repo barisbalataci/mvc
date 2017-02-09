@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nortwind.MvcWebUI", "Nortwi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nortwind.MvcWebUI.Tests", "Nortwind.MvcWebUI.Tests\Nortwind.MvcWebUI.Tests.csproj", "{3B7605A7-9115-4F4D-9DA5-3E67F58DE97C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.EfPowerToolsDemo", "NorthwindProject.EfPowerToolsDemo\Northwind.EfPowerToolsDemo.csproj", "{1510F0B9-152A-4E4B-B612-EEC38A54869E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nortwind.Service", "Service\Nortwind.Service.csproj", "{A64781C1-8B4A-46E4-ABEB-79ECA2196AFB}"
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Nortwind.ServiceIISHost", "Nortwind.ServiceIISHost\", "{233B8AE8-7EFF-47CC-88CC-D1A9BDC26083}"
@@ -68,10 +66,6 @@ Global
 		{3B7605A7-9115-4F4D-9DA5-3E67F58DE97C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B7605A7-9115-4F4D-9DA5-3E67F58DE97C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B7605A7-9115-4F4D-9DA5-3E67F58DE97C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1510F0B9-152A-4E4B-B612-EEC38A54869E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1510F0B9-152A-4E4B-B612-EEC38A54869E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1510F0B9-152A-4E4B-B612-EEC38A54869E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1510F0B9-152A-4E4B-B612-EEC38A54869E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A64781C1-8B4A-46E4-ABEB-79ECA2196AFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A64781C1-8B4A-46E4-ABEB-79ECA2196AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A64781C1-8B4A-46E4-ABEB-79ECA2196AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
