@@ -1,5 +1,5 @@
-﻿using Nortwind.DataAcces.Concrete.Mappings;
-using Nortwind.Entities.Concrete;
+﻿using Project.DataLayer.Concrete.Mappings;
+using Project.Shared.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Nortwind.DataAcces.Concrete.EntityFramework.Contexts
+namespace Project.DataLayer.Concrete.EntityFramework.Contexts
 {
     public class NortwindContext : DbContext
     {

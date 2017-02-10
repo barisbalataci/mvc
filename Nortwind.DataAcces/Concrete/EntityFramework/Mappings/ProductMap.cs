@@ -1,4 +1,4 @@
-﻿using Nortwind.Entities.Concrete;
+﻿using Project.Shared.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nortwind.DataAcces.Concrete.Mappings
+namespace Project.DataLayer.Concrete.Mappings
 {
     public class ProductMap:EntityTypeConfiguration<Product>
     {

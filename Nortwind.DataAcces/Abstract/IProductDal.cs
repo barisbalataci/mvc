@@ -1,12 +1,12 @@
-﻿using Nortwind.Entities.ComplexType;
-using Nortwind.Entities.Concrete;
+﻿using Project.Shared.ComplexType;
+using Project.Shared.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nortwind.DataAcces.Abstract
+namespace Project.DataLayer.Abstract
 {
     public interface IProductDal : IEntityRepository<Product>
     {

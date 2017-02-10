@@ -1,5 +1,5 @@
-﻿using Nortwind.DataAcces.Abstract;
-using Nortwind.Entities.Abstract;
+﻿using Project.DataLayer.Abstract;
+using Project.Shared.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Linq.Expressions;
 using System.Data.Entity;
 
-namespace Nortwind.DataAcces.Concrete.EntityFramework
+namespace Project.DataLayer.Concrete.EntityFramework
 {
     public class EfEntitityRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity>
         where TEntity : class, IEntity, new()

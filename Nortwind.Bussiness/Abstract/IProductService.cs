@@ -1,6 +1,6 @@
-﻿using Nortwind.Entities;
-using Nortwind.Entities.ComplexType;
-using Nortwind.Entities.Concrete;
+﻿using Project.Shared;
+using Project.Shared.ComplexType;
+using Project.Shared.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nortwind.Bussiness.Abstract
+namespace Project.ServerBase.Abstract
 {
     [ServiceContract()]
     public interface IProductService

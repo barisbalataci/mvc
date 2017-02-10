@@ -1,13 +1,13 @@
 ﻿
-using Nortwind.Entities.Concrete;
-using Nortwind.Service;
+using Project.Shared.Concrete;
+using Project.Server;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nortwind.ServiceClientConsole
+namespace Project.Client
 {
     class Program
     {

@@ -1,6 +1,6 @@
 ﻿using Ninject;
 
-namespace Nortwind.Bussiness.DependencyResolver.Ninject
+namespace Project.ServerBase.DependencyResolver.Ninject
 {
     public class InstanceFactory<T>
     {

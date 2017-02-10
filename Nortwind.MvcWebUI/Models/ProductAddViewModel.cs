@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Web.Mvc;
-using Nortwind.Entities.Concrete;
+using Project.Shared.Concrete;
 
 namespace Nortwind.MvcWebUI.Models
 {

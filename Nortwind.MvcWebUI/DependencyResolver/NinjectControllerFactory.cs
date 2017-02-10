@@ -1,8 +1,8 @@
 ﻿using Ninject;
-using Nortwind.Bussiness.Abstract;
-using Nortwind.Bussiness.Concrete.Managers;
-using Nortwind.DataAcces.Abstract;
-using Nortwind.DataAcces.Concrete.EntityFramework;
+using Project.ServerBase.Abstract;
+using Project.ServerBase.Concrete.Managers;
+using Project.DataLayer.Abstract;
+using Project.DataLayer.Concrete.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Linq;

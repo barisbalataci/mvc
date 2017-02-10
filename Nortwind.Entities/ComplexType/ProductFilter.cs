@@ -1,4 +1,4 @@
-﻿namespace Nortwind.Entities.ComplexType
+﻿namespace Project.Shared.ComplexType
 {
     public class ProductFilter
     {

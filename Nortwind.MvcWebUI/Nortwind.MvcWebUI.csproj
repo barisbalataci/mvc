@@ -279,17 +279,17 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Nortwind.Bussiness\Nortwind.Bussiness.csproj">
+    <ProjectReference Include="..\Nortwind.Bussiness\Project.BussinessBase.csproj">
       <Project>{8DF2150D-177D-4D15-932A-E8B8567BBB90}</Project>
-      <Name>Nortwind.Bussiness</Name>
+      <Name>Project.BussinessBase</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Nortwind.DataAcces\Nortwind.DataAccess.csproj">
+    <ProjectReference Include="..\Nortwind.DataAcces\Project.DataLayer.csproj">
       <Project>{966F79A9-005E-4C9A-A7C2-106330F9BA0E}</Project>
-      <Name>Nortwind.DataAccess</Name>
+      <Name>Project.DataLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Nortwind.Entities\Nortwind.Entities.csproj">
+    <ProjectReference Include="..\Nortwind.Entities\Project.Shared.csproj">
       <Project>{73109448-4174-4158-87E2-A905EE7EFD47}</Project>
-      <Name>Nortwind.Entities</Name>
+      <Name>Project.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

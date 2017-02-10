@@ -4,9 +4,9 @@ using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
-using Nortwind.Entities.Concrete;
+using Project.Shared.Concrete;
 
-namespace Nortwind.Service
+namespace Project.Server
 {
     [ServiceContract()]
     public interface IProductService1

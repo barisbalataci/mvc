@@ -1,9 +1,9 @@
-﻿using Nortwind.Bussiness.Abstract;
-using Nortwind.Bussiness.Concrete.Managers;
-using Nortwind.DataAcces.Concrete;
-using Nortwind.DataAcces.Concrete.EntityFramework;
-using Nortwind.Entities.ComplexType;
-using Nortwind.Entities.Concrete;
+﻿using Project.ServerBase.Abstract;
+using Project.ServerBase.Concrete.Managers;
+using Project.DataLayer.Concrete;
+using Project.DataLayer.Concrete.EntityFramework;
+using Project.Shared.ComplexType;
+using Project.Shared.Concrete;
 using Nortwind.MvcWebUI.Models;
 using System;
 using System.Collections.Generic;

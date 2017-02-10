@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Nortwind.Entities.Concrete;
+using Project.Shared.Concrete;
 using Nortwind.MvcWebUI.HtmlHelpers;
 
 namespace Nortwind.MvcWebUI.Models

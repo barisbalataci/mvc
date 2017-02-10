@@ -1,5 +1,5 @@
-﻿using Nortwind.Bussiness.Abstract;
-using Nortwind.Entities.Concrete;
+﻿using Project.ServerBase.Abstract;
+using Project.Shared.Concrete;
 using Nortwind.MvcWebUI.Models;
 using System;
 using System.Collections.Generic;

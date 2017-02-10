@@ -1,7 +1,7 @@
-﻿using Nortwind.Entities.Abstract;
+﻿using Project.Shared.Abstract;
 using System.Collections.Generic;
 
-namespace Nortwind.Entities.Concrete
+namespace Project.Shared.Concrete
 {
     public class Category:IEntity
     {

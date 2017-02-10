@@ -1,4 +1,4 @@
-﻿using Nortwind.Entities.Abstract;
+﻿using Project.Shared.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nortwind.DataAcces.Abstract
+namespace Project.DataLayer.Abstract
 {
     public interface IEntityRepository<T> where T : class, IEntity, new()
     {

@@ -1,17 +1,19 @@
-﻿using Nortwind.Entities.Concrete;
+﻿using Project.Shared.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Nortwind.DataAcces.Concrete.EntityFramework;
-using Nortwind.DataAcces.Concrete.EntityFramework.Contexts;
+using Project.DataLayer.Concrete.EntityFramework;
+using Project.DataLayer.Concrete.EntityFramework.Contexts;
+using System.Data;
+using System.Transactions;
 
-namespace Nortwind.Bussiness.UnitOfWorks
+namespace Project.ServerBase.UnitOfWorks
 {
     public class UnitWork : IUnitWork
     {
-        //private NortwindContext _context = new ShopContext();
+        public NortwindContext _context = new NortwindContext();
         private EfEntitityRepositoryBase<Category,NortwindContext> _categoryRepository;
         private EfEntitityRepositoryBase<Product, NortwindContext> _productRepository;
         private bool _disposed = false;
@@ -35,11 +37,11 @@ namespace Nortwind.Bussiness.UnitOfWorks
         }
         public void Save()
         {
-            //using (TransactionScope tScope = new TransactionScope())
-            //{
-            //    _context.SaveChanges();
-            //    tScope.Complete();
-            //}
+            using (TransactionScope tScope = new TransactionScope())
+            {
+                _context.SaveChanges();
+                tScope.Complete();
+            }
         }
         protected virtual void Dispose(bool disposing)
         {

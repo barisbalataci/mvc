@@ -1,12 +1,12 @@
 ﻿using FluentValidation;
-using Nortwind.Entities.Concrete;
+using Project.Shared.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nortwind.Bussiness.ValidationRules.FluentValidation
+namespace Project.ServerBase.ValidationRules.FluentValidation
 {
     public class ProductValidator:AbstractValidator<Product>
     {

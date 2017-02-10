@@ -3,17 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nortwind.Entities", "Nortwind.Entities\Nortwind.Entities.csproj", "{73109448-4174-4158-87E2-A905EE7EFD47}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Shared", "Nortwind.Entities\Project.Shared.csproj", "{73109448-4174-4158-87E2-A905EE7EFD47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nortwind.DataAccess", "Nortwind.DataAcces\Nortwind.DataAccess.csproj", "{966F79A9-005E-4C9A-A7C2-106330F9BA0E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.DataLayer", "Nortwind.DataAcces\Project.DataLayer.csproj", "{966F79A9-005E-4C9A-A7C2-106330F9BA0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nortwind.Bussiness", "Nortwind.Bussiness\Nortwind.Bussiness.csproj", "{8DF2150D-177D-4D15-932A-E8B8567BBB90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.BussinessBase", "Nortwind.Bussiness\Project.BussinessBase.csproj", "{8DF2150D-177D-4D15-932A-E8B8567BBB90}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nortwind.MvcWebUI", "Nortwind.MvcWebUI\Nortwind.MvcWebUI.csproj", "{4C186592-698B-47BC-B9D2-A3B27E40A07C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nortwind.MvcWebUI.Tests", "Nortwind.MvcWebUI.Tests\Nortwind.MvcWebUI.Tests.csproj", "{3B7605A7-9115-4F4D-9DA5-3E67F58DE97C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nortwind.Service", "Service\Nortwind.Service.csproj", "{A64781C1-8B4A-46E4-ABEB-79ECA2196AFB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Server", "Service\Project.Server.csproj", "{A64781C1-8B4A-46E4-ABEB-79ECA2196AFB}"
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Nortwind.ServiceIISHost", "Nortwind.ServiceIISHost\", "{233B8AE8-7EFF-47CC-88CC-D1A9BDC26083}"
 	ProjectSection(WebsiteProperties) = preProject
@@ -38,7 +36,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Nortwind.ServiceIISHost", "
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nortwind.ServiceClientConsole", "Nortwind.ServiceClientConsole\Nortwind.ServiceClientConsole.csproj", "{FA4AED38-C67F-485D-A26E-1F2CD2FE38F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Client", "Nortwind.ServiceClientConsole\Project.Client.csproj", "{FA4AED38-C67F-485D-A26E-1F2CD2FE38F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,10 +60,6 @@ Global
 		{4C186592-698B-47BC-B9D2-A3B27E40A07C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C186592-698B-47BC-B9D2-A3B27E40A07C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C186592-698B-47BC-B9D2-A3B27E40A07C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B7605A7-9115-4F4D-9DA5-3E67F58DE97C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B7605A7-9115-4F4D-9DA5-3E67F58DE97C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B7605A7-9115-4F4D-9DA5-3E67F58DE97C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B7605A7-9115-4F4D-9DA5-3E67F58DE97C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A64781C1-8B4A-46E4-ABEB-79ECA2196AFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A64781C1-8B4A-46E4-ABEB-79ECA2196AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A64781C1-8B4A-46E4-ABEB-79ECA2196AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU

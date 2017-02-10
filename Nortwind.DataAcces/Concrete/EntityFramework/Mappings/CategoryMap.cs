@@ -1,8 +1,8 @@
-﻿using Nortwind.Entities.Concrete;
+﻿using Project.Shared.Concrete;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 
-namespace Nortwind.DataAcces.Concrete.Mappings
+namespace Project.DataLayer.Concrete.Mappings
 {
     public class CategoryMap : EntityTypeConfiguration<Category>
     {

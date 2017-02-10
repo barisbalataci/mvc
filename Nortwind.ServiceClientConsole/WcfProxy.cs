@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.ServiceModel;
 using System.Configuration;
 
-namespace Nortwind.ServiceClientConsole
+namespace Project.Client
 {
     public class WcfProxy<T>
     {

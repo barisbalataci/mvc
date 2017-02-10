@@ -1,13 +1,13 @@
-﻿using Nortwind.DataAcces.Abstract;
-using Nortwind.DataAcces.Concrete.EntityFramework.Contexts;
-using Nortwind.Entities.Concrete;
+﻿using Project.DataLayer.Abstract;
+using Project.DataLayer.Concrete.EntityFramework.Contexts;
+using Project.Shared.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nortwind.DataAcces.Concrete.EntityFramework
+namespace Project.DataLayer.Concrete.EntityFramework
 {
     public class EfCategoryDal:EfEntitityRepositoryBase<Category,NortwindContext>,ICategoryDal
     {

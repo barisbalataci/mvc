@@ -1,10 +1,10 @@
 ﻿using Ninject.Modules;
-using Nortwind.Bussiness.Abstract;
-using Nortwind.Bussiness.Concrete.Managers;
-using Nortwind.DataAcces.Abstract;
-using Nortwind.DataAcces.Concrete.EntityFramework;
+using Project.ServerBase.Abstract;
+using Project.ServerBase.Concrete.Managers;
+using Project.DataLayer.Abstract;
+using Project.DataLayer.Concrete.EntityFramework;
 
-namespace Nortwind.Bussiness.DependencyResolver.Ninject
+namespace Project.ServerBase.DependencyResolver.Ninject
 {
     class BusinessModule:NinjectModule
     {

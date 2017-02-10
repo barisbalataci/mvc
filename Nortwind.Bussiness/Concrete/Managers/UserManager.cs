@@ -1,13 +1,13 @@
-﻿using Nortwind.Bussiness.Abstract;
+﻿using Project.ServerBase.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Nortwind.Entities.Concrete;
-using Nortwind.DataAcces.Abstract;
+using Project.Shared.Concrete;
+using Project.DataLayer.Abstract;
 
-namespace Nortwind.Bussiness.Concrete.Managers
+namespace Project.ServerBase.Concrete.Managers
 {
     public class UserManager:IUserService
     {

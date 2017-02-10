@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nortwind.Bussiness.UnitOfWorks
+namespace Project.ServerBase.UnitOfWorks
 {
     public interface IUnitWork:IDisposable
     {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nortwind.Bussiness.ValidationRules.FluentValidation
+namespace Project.ServerBase.ValidationRules.FluentValidation
 {
     public class FluentValidatorTool
     {

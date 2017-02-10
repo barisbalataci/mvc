@@ -1,11 +1,8 @@
 ﻿using FluentValidation;
 using Ninject;
-using Nortwind.Bussiness.ValidationRules.FluentValidation;
-using Nortwind.Entities.Concrete;
+using Project.ServerBase.ValidationRules.FluentValidation;
+using Project.Shared.Concrete;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace Nortwind.MvcWebUI.DependencyResolver
 {
