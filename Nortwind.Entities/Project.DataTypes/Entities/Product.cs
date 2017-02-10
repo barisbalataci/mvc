@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.Shared.Concrete
+namespace Project.Shared.DataTypes.Entities
 {
     public class Product:IEntity
     {

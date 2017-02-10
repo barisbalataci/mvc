@@ -4,9 +4,9 @@ using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
-using Project.Shared.Concrete;
+using Project.Shared.DataTypes.Entities;
 
-namespace Project.Server
+namespace Project.Shared
 {
     [ServiceContract()]
     public interface IProductService1

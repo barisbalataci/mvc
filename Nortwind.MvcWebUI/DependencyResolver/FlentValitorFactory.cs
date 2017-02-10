@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using Ninject;
 using Project.ServerBase.ValidationRules.FluentValidation;
-using Project.Shared.Concrete;
+using Project.Shared.DataTypes.Entities;
 using System;
 
 namespace Nortwind.MvcWebUI.DependencyResolver

@@ -30,8 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\Nortwind.Bussiness\bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,12 +44,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\IEntity.cs" />
-    <Compile Include="ComplexType\ProductDetail.cs" />
-    <Compile Include="ComplexType\ProductFilter.cs" />
-    <Compile Include="Concrete\Category.cs" />
-    <Compile Include="Concrete\Product.cs" />
-    <Compile Include="Concrete\User.cs" />
+    <Compile Include="Project.DataTypes\ComplexType\ProductDetail.cs" />
+    <Compile Include="Project.DataTypes\ComplexType\ProductFilter.cs" />
+    <Compile Include="Project.DataTypes\Entities\Category.cs" />
+    <Compile Include="Project.DataTypes\Entities\Product.cs" />
+    <Compile Include="Project.DataTypes\Entities\User.cs" />
+    <Compile Include="IProductService1.cs" />
+    <Compile Include="Project.DataTypes\Entities\IEntity.cs" />
+    <Compile Include="Project.DataTypes\Mappings\CategoryMap.cs" />
+    <Compile Include="Project.DataTypes\Mappings\ProductMap.cs" />
+    <Compile Include="Project.DataTypes\Mappings\UserMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

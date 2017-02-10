@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Project.Shared.Concrete;
+using Project.Shared.DataTypes.Entities;
 using Project.DataLayer.Abstract;
 
 namespace Project.ServerBase.Concrete.Managers

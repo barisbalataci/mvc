@@ -1,4 +1,4 @@
-﻿using Project.Shared.Concrete;
+﻿using Project.Shared.DataTypes.Entities;
 
 namespace Nortwind.MvcWebUI.Models
 {

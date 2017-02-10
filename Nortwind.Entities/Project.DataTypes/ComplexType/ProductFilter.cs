@@ -1,4 +1,4 @@
-﻿namespace Project.Shared.ComplexType
+﻿namespace Project.Shared.DataTypes.ComplexType
 {
     public class ProductFilter
     {

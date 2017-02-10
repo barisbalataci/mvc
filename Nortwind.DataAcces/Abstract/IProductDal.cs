@@ -1,5 +1,5 @@
-﻿using Project.Shared.ComplexType;
-using Project.Shared.Concrete;
+﻿using Project.Shared.DataTypes.ComplexType;
+using Project.Shared.DataTypes.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

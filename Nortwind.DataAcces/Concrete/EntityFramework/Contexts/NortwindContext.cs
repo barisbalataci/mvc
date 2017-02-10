@@ -1,5 +1,5 @@
-﻿using Project.DataLayer.Concrete.Mappings;
-using Project.Shared.Concrete;
+﻿using Project.Shared.DataTypes.Mappings;
+using Project.Shared.DataTypes.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;

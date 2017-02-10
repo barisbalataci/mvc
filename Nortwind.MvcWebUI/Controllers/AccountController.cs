@@ -1,5 +1,5 @@
 ﻿using Project.ServerBase.Abstract;
-using Project.Shared.Concrete;
+using Project.Shared.DataTypes.Entities;
 using Nortwind.MvcWebUI.Models;
 using System;
 using System.Collections.Generic;

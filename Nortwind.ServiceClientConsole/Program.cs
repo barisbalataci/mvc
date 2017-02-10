@@ -1,5 +1,5 @@
 ﻿
-using Project.Shared.Concrete;
+using Project.Shared.DataTypes.Entities;
 using Project.Server;
 using System;
 using System.Collections.Generic;

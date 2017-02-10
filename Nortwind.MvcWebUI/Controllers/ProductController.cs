@@ -2,8 +2,8 @@
 using Project.ServerBase.Concrete.Managers;
 using Project.DataLayer.Concrete;
 using Project.DataLayer.Concrete.EntityFramework;
-using Project.Shared.ComplexType;
-using Project.Shared.Concrete;
+using Project.Shared.DataTypes.ComplexType;
+using Project.Shared.DataTypes.Entities;
 using Nortwind.MvcWebUI.Models;
 using System;
 using System.Collections.Generic;

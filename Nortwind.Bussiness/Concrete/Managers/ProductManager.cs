@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Project.Shared.ComplexType;
-using Project.Shared.Concrete;
+using Project.Shared.DataTypes.ComplexType;
+using Project.Shared.DataTypes.Entities;
 using Project.DataLayer.Abstract;
 using Project.ServerBase.ValidationRules.FluentValidation;
 

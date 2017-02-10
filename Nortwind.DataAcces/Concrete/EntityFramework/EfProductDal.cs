@@ -1,12 +1,12 @@
 ﻿using Project.DataLayer.Abstract;
 using Project.DataLayer.Concrete.EntityFramework.Contexts;
-using Project.Shared.Concrete;
+using Project.Shared.DataTypes.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Project.Shared.ComplexType;
+using Project.Shared.DataTypes.ComplexType;
 
 namespace Project.DataLayer.Concrete.EntityFramework
 {

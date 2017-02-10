@@ -1,8 +1,8 @@
-using Project.Shared.Concrete;
+using Project.Shared.DataTypes.Entities;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 
-namespace Project.DataLayer.Concrete.Mappings
+namespace Project.Shared.DataTypes.Mappings
 { 
     public class UserMap : EntityTypeConfiguration<User>
     {

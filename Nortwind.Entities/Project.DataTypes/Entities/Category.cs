@@ -1,7 +1,7 @@
-﻿using Project.Shared.Abstract;
+﻿
 using System.Collections.Generic;
 
-namespace Project.Shared.Concrete
+namespace Project.Shared.DataTypes.Entities
 {
     public class Category:IEntity
     {
