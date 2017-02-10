@@ -60,8 +60,6 @@
     <Compile Include="Concrete\Managers\CategoryManager.cs" />
     <Compile Include="Concrete\Managers\ProductManager.cs" />
     <Compile Include="Concrete\Managers\UserManager.cs" />
-    <Compile Include="DataAccess\EntityFramework\EfEntitityRepositoryBase.cs" />
-    <Compile Include="DataAccess\IEntityRepository.cs" />
     <Compile Include="DependencyResolver\Ninject\BusinessModule.cs" />
     <Compile Include="DependencyResolver\Ninject\InstanceFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

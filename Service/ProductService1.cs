@@ -6,9 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Project.Shared.DataTypes.ComplexType;
 using Project.ServerBase.UnitOfWorks;
-
+using Project.Shared;
 
 namespace Project.Server
 {

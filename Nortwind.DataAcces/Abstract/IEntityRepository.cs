@@ -1,4 +1,4 @@
-﻿using Project.Shared.Abstract;
+﻿using Project.Shared.DataTypes.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

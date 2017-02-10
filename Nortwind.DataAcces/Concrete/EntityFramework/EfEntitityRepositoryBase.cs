@@ -1,5 +1,4 @@
 ﻿using Project.DataLayer.Abstract;
-using Project.Shared.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Linq.Expressions;
 using System.Data.Entity;
+using Project.Shared.DataTypes.Entities;
 
 namespace Project.DataLayer.Concrete.EntityFramework
 {
