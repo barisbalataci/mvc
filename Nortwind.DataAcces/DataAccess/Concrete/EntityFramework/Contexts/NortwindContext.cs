@@ -1,4 +1,4 @@
-﻿using Project.Shared.DataTypes.Mappings;
+﻿using Project.DataLayer.Mappings;
 using Project.Shared.DataTypes.Entities;
 using System;
 using System.Collections.Generic;

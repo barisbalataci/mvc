@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.Shared.DataTypes.Mappings
+namespace Project.DataLayer.Mappings
 {
     public class ProductMap:EntityTypeConfiguration<Product>
     {

@@ -2,7 +2,7 @@ using Project.Shared.DataTypes.Entities;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 
-namespace Project.Shared.DataTypes.Mappings
+namespace Project.DataLayer.Mappings
 { 
     public class UserMap : EntityTypeConfiguration<User>
     {
