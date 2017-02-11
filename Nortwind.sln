@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Shared", "Nortwind.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.DataLayer", "Nortwind.DataAcces\Project.DataLayer.csproj", "{966F79A9-005E-4C9A-A7C2-106330F9BA0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.BussinessBase", "Nortwind.Bussiness\Project.BussinessBase.csproj", "{8DF2150D-177D-4D15-932A-E8B8567BBB90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Root", "Nortwind.Bussiness\Project.Root.csproj", "{8DF2150D-177D-4D15-932A-E8B8567BBB90}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nortwind.MvcWebUI", "Nortwind.MvcWebUI\Nortwind.MvcWebUI.csproj", "{4C186592-698B-47BC-B9D2-A3B27E40A07C}"
 EndProject

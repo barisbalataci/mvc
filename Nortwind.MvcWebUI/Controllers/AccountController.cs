@@ -1,4 +1,4 @@
-﻿using Project.ServerBase.Abstract;
+﻿using Project.Root.Abstract;
 using Project.Shared.DataTypes.Entities;
 using Nortwind.MvcWebUI.Models;
 using System;

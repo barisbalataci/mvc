@@ -1,12 +1,12 @@
-﻿using Project.ServerBase.Abstract;
-using Project.ServerBase.DependencyResolver.Ninject;
+﻿using Project.Root.Abstract;
+using Project.Root.DependencyResolver.Ninject;
 using Project.Shared.DataTypes.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Project.ServerBase.UnitOfWorks;
+using Project.Root.UnitOfWorks;
 using Project.Shared;
 
 namespace Project.Server

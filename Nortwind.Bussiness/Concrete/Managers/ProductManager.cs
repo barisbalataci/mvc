@@ -1,4 +1,4 @@
-﻿using Project.ServerBase.Abstract;
+﻿using Project.Root.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using Project.Shared.DataTypes.ComplexType;
 using Project.Shared.DataTypes.Entities;
 using Project.DataLayer.Abstract;
-using Project.ServerBase.ValidationRules.FluentValidation;
+using Project.Root.ValidationRules.FluentValidation;
 
-namespace Project.ServerBase.Concrete.Managers
+namespace Project.Root.Concrete.Managers
 {
     public class ProductManager : IProductService
     {

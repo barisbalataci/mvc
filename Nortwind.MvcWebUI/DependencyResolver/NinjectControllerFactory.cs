@@ -1,6 +1,6 @@
 ﻿using Ninject;
-using Project.ServerBase.Abstract;
-using Project.ServerBase.Concrete.Managers;
+using Project.Root.Abstract;
+using Project.Root.Concrete.Managers;
 using Project.DataLayer.Abstract;
 using Project.DataLayer.Concrete.EntityFramework;
 using System;

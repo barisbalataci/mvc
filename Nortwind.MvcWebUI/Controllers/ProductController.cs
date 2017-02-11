@@ -1,5 +1,5 @@
-﻿using Project.ServerBase.Abstract;
-using Project.ServerBase.Concrete.Managers;
+﻿using Project.Root.Abstract;
+using Project.Root.Concrete.Managers;
 using Project.DataLayer.Concrete;
 using Project.DataLayer.Concrete.EntityFramework;
 using Project.Shared.DataTypes.ComplexType;

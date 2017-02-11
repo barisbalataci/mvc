@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 using Ninject;
-using Project.ServerBase.ValidationRules.FluentValidation;
+using Project.Root.ValidationRules.FluentValidation;
 using Project.Shared.DataTypes.Entities;
 using System;
 

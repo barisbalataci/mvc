@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.ServerBase.Abstract
+namespace Project.Root.Abstract
 {
     public interface ICategoryService
     {

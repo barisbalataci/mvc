@@ -8,10 +8,11 @@ using Project.DataLayer.Concrete.EntityFramework;
 using Project.DataLayer.Concrete.EntityFramework.Contexts;
 using System.Data;
 using System.Transactions;
+using Project.Root.Abstract;
 
-namespace Project.ServerBase.UnitOfWorks
+namespace Project.Root.Concrete
 {
-    public class UnitWork : IUnitWork
+    public class ServiceBase : IServiceBase
     {
         public NortwindContext _context = new NortwindContext();
         private EfEntitityRepositoryBase<Category,NortwindContext> _categoryRepository;

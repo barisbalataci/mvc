@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.ServerBase.ValidationRules.FluentValidation
+namespace Project.Root.ValidationRules.FluentValidation
 {
     public class FluentValidatorTool
     {

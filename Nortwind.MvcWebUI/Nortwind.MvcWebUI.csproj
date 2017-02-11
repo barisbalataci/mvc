@@ -279,9 +279,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Nortwind.Bussiness\Project.BussinessBase.csproj">
+    <ProjectReference Include="..\Nortwind.Bussiness\Project.Root.csproj">
       <Project>{8DF2150D-177D-4D15-932A-E8B8567BBB90}</Project>
-      <Name>Project.BussinessBase</Name>
+      <Name>Project.Root</Name>
     </ProjectReference>
     <ProjectReference Include="..\Nortwind.DataAcces\Project.DataLayer.csproj">
       <Project>{966F79A9-005E-4C9A-A7C2-106330F9BA0E}</Project>

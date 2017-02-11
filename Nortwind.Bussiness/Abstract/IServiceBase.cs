@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.ServerBase.UnitOfWorks
+namespace Project.Root.Abstract
 {
-    public interface IUnitWork:IDisposable
+    public interface IServiceBase:IDisposable
     {
     }
 }

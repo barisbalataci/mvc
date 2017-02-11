@@ -8,7 +8,7 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.ServerBase.Abstract
+namespace Project.Root.Abstract
 {
     [ServiceContract()]
     public interface IProductService
