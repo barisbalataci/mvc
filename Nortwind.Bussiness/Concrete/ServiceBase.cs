@@ -15,50 +15,62 @@ namespace Project.Root.Concrete
 {
     public class ServiceBase : IServiceBase
     {
-        public NortwindContext _context = new NortwindContext();
-        private EfEntitityRepositoryBase<Category,NortwindContext> _categoryRepository;
-        private EfEntitityRepositoryBase<Product, NortwindContext> _productRepository;
-        private bool _disposed = false;
-        public EfEntitityRepositoryBase<Category, NortwindContext> CategoryRepository
+        private NortwindContext _context;
+        private EfCategoryDal _categoryDal;
+        private EfProductDal _productDal;
+        private EfUserDal _UserDal;
+       
+        public EfCategoryDal CategoryDAL
         {
             get
             {
-                if (_categoryRepository == null)
-                    _categoryRepository = new EfEntitityRepositoryBase<Category, NortwindContext>();
-                return _categoryRepository;
+                if (_categoryDal == null)
+                    _categoryDal = new EfCategoryDal();
+                return _categoryDal;
             }
         }
-        public EfEntitityRepositoryBase<Product, NortwindContext> ProductRepository
+        public EfProductDal ProductDAL
         {
             get
             {
-                if (_productRepository == null)
-                    _productRepository = new EfEntitityRepositoryBase<Product, NortwindContext>();
-                return _productRepository;
+                if (_productDal == null)
+                    _productDal = new EfProductDal();
+                return _productDal;
             }
         }
-        public void Save()
+
+        public EfUserDal UserDAL
+        {
+            get
+            {
+                if (_UserDal == null)
+                    _UserDal = new EfUserDal();
+                return _UserDal;
+            }
+        }
+
+        public NortwindContext Context
+        {
+            get
+            {
+                if (_context == null)
+                    _context = new NortwindContext();
+                return _context;
+            }
+        }
+
+        public void SaveAll()
         {
             using (TransactionScope tScope = new TransactionScope())
             {
-                _context.SaveChanges();
+                //_context.SaveChanges();
                 tScope.Complete();
             }
         }
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!this._disposed)
-            {
-                if (disposing)
-                {
-                    //_context.Dispose();
-                }
-            }
-            this._disposed = true;
-        }
+      
         public void Dispose()
         {
-            Dispose(true);
+            _context.Dispose();
             GC.SuppressFinalize(this);
         }
     }
