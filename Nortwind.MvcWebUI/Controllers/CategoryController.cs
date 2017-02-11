@@ -10,11 +10,11 @@ namespace Nortwind.MvcWebUI.Controllers
 {
     public class CategoryController : Controller
     {
-        IProjectService _pService;
+        private IProjectService _pService;
 
-        public CategoryController(/*ICategoryService categoryServic*/)
+        public CategoryController(IProjectService pService)
         {
-            //_cateogoryService = categoryService;
+            _pService = pService;
         }
         public PartialViewResult List(int? categoryId)
         {

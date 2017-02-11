@@ -15,8 +15,9 @@ namespace Nortwind.MvcWebUI.Controllers
     {
         private IProjectService _pService;
 
-        public AccountController()
-        {            
+        public AccountController(IProjectService pService)
+        {
+            _pService = pService;
         }
         public ActionResult Login()
         {

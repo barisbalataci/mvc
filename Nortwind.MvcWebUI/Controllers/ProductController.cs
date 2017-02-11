@@ -14,14 +14,11 @@ namespace Nortwind.MvcWebUI.Controllers
     [Authorize]
     public class ProductController : Controller
     {
-        //private IProductService _productService;
-        //private ICategoryService _categoryService;
+ 
         private IProjectService _pService;
-        public ProductController(/*IProductService productService,ICategoryService categoryService*/)
+        public ProductController(IProjectService pService)
         {
-            
-            //_productService = productService;
-            //_categoryService = categoryService;
+            _pService = pService;
         }
         public int pageSize = 10;
 
