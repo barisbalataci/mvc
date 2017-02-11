@@ -283,13 +283,13 @@
       <Project>{8DF2150D-177D-4D15-932A-E8B8567BBB90}</Project>
       <Name>Project.Root</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Nortwind.DataAcces\Project.DataLayer.csproj">
-      <Project>{966F79A9-005E-4C9A-A7C2-106330F9BA0E}</Project>
-      <Name>Project.DataLayer</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Nortwind.Entities\Project.Shared.csproj">
       <Project>{73109448-4174-4158-87E2-A905EE7EFD47}</Project>
       <Name>Project.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Service\Project.Server.csproj">
+      <Project>{A64781C1-8B4A-46E4-ABEB-79ECA2196AFB}</Project>
+      <Name>Project.Server</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
