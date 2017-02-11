@@ -8,34 +8,107 @@ using System.Text;
 using System.Threading.Tasks;
 using Project.Root.Concrete;
 using Project.Shared;
+using Project.Root.ValidationRules.FluentValidation;
+using Project.Shared.DataTypes.ComplexType;
 
 namespace Project.Server
 {
-    public class ProjectService : IProjectService
+    public class ProjectService :IProjectService
     {
-        private readonly IProductService _productService;
+       // private readonly IProductService _productService;
         //private readonly UnitWork unit;
+        private readonly IServiceBase _session;
 
         public ProjectService()
         {
-            _productService = InstanceFactory<IProductService>.GetInstance();
-            //unit= new UnitWork();
-            
-             
+            //_productService = InstanceFactory<IProductService>.GetInstance();
 
+            _session = InstanceFactory<IServiceBase>.GetInstance();
+            
 
         }
-     
+
+        public void Add(Product product)
+        {
+            FluentValidatorTool.Validate(new ProductValidator(), product);
+            ProductNameCheck(product);
+            _session.ProductDAL.Add(product);
+        }
+
+        private void ProductNameCheck(Product product)
+        {
+            bool isThereAnyProductNameWithTheSameName = _session.ProductDAL.GetList(p => p.ProductName == product.ProductName).Any();
+            if (isThereAnyProductNameWithTheSameName)
+            {
+                throw new Exception("There is already a product with the same name.");
+            }
+        }
+
+        public void Delete(Product product)
+        {
+            _session.ProductDAL.Delete(product);
+        }
+
+        public List<Product> GetAll(ProductFilter productFilter)
+        {
+            int? categoryId = productFilter.CategoryId;
+            if (categoryId != null)
+            {
+                return _session.ProductDAL.GetList(
+                    filter: product => product.CategoryId == categoryId,
+                    orderBy: o => o.OrderBy(product => product.Id),
+                    page: productFilter.Page,
+                    pageSize: productFilter.PageSize
+                );
+            }
+            else
+            {
+                return _session.ProductDAL.GetList(
+                    orderBy: o => o.OrderBy(product => product.Id),
+                    page: productFilter.Page,
+                    pageSize: productFilter.PageSize
+                );
+            }
+        }
+
+        public List<Product> GetByCategory(int categoryId)
+        {
+            return _session.ProductDAL.GetList(p => p.CategoryId == categoryId);
+        }
+
         public Product GetById(int id)
         {
-            return _productService.GetById(id);     
-                   
-            
-            //return unit.ProductRepository.Get(m => m.Id == id);
+            return _session.ProductDAL.Get(p => p.Id == id);
         }
 
-     
+        public List<Product> GetByProductName(string productName)
+        {
+            return _session.ProductDAL.GetList(p => p.ProductName.Contains(productName));
+        }
 
-        
+        public int GetProductsCountByCategory(int? categoryId)
+        {
+            return _session.ProductDAL.GetProducutsCountByCategory(categoryId);
+        }
+
+        public void Update(Product product)
+        {
+            FluentValidatorTool.Validate(new ProductValidator(), product);
+            //ProductNameCheck(product);
+            _session.ProductDAL.Update(product);
+        }
+
+        public List<Category> GetAll()
+        {
+            return _session.CategoryDAL.GetList();
+        }
+
+        public User GetByUserNameAndPassword(User user)
+        {
+            return _session.UserDAL.Get(u => u.UserName == user.UserName && u.Password == user.Password);
+        }
+
+
+
     }
 }
