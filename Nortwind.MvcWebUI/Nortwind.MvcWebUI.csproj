@@ -210,6 +210,7 @@
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="DependencyResolver\NinjectControllerFactory.cs" />
     <Compile Include="DependencyResolver\FluentValitorFactory.cs" />
+    <Compile Include="DependencyResolver\ResolveModule.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
