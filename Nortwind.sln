@@ -13,29 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nortwind.MvcWebUI", "Nortwi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Server", "Service\Project.Server.csproj", "{A64781C1-8B4A-46E4-ABEB-79ECA2196AFB}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Nortwind.ServiceIISHost", "Nortwind.ServiceIISHost\", "{233B8AE8-7EFF-47CC-88CC-D1A9BDC26083}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
-		ProjectReferences = "{a64781c1-8b4a-46e4-abeb-79eca2196afb}|Project.Bussiness.dll;{73109448-4174-4158-87E2-A905EE7EFD47}|Nortwind.Entities.dll;{8DF2150D-177D-4D15-932A-E8B8567BBB90}|Nortwind.BussinessBase.dll;{966F79A9-005E-4C9A-A7C2-106330F9BA0E}|Nortwind.DataAcces.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_9846"
-		Debug.AspNetCompiler.PhysicalPath = "Nortwind.ServiceIISHost\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_9846\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_9846"
-		Release.AspNetCompiler.PhysicalPath = "Nortwind.ServiceIISHost\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_9846\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "9846"
-		SlnRelativePath = "Nortwind.ServiceIISHost\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Client", "Nortwind.ServiceClientConsole\Project.Client.csproj", "{FA4AED38-C67F-485D-A26E-1F2CD2FE38F8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.ServerHost", "Project.ServerHost\Project.ServerHost.csproj", "{9C17BAEB-C93B-4825-B53C-2F8F0264D21C}"
@@ -66,10 +43,6 @@ Global
 		{A64781C1-8B4A-46E4-ABEB-79ECA2196AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A64781C1-8B4A-46E4-ABEB-79ECA2196AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A64781C1-8B4A-46E4-ABEB-79ECA2196AFB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{233B8AE8-7EFF-47CC-88CC-D1A9BDC26083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{233B8AE8-7EFF-47CC-88CC-D1A9BDC26083}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{233B8AE8-7EFF-47CC-88CC-D1A9BDC26083}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{233B8AE8-7EFF-47CC-88CC-D1A9BDC26083}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{FA4AED38-C67F-485D-A26E-1F2CD2FE38F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FA4AED38-C67F-485D-A26E-1F2CD2FE38F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA4AED38-C67F-485D-A26E-1F2CD2FE38F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
