@@ -41,13 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Project.DataTypes\ComplexType\ProductDetail.cs" />
-    <Compile Include="Project.DataTypes\ComplexType\ProductFilter.cs" />
-    <Compile Include="Project.DataTypes\Entities\Category.cs" />
-    <Compile Include="Project.DataTypes\Entities\Product.cs" />
-    <Compile Include="Project.DataTypes\Entities\User.cs" />
-    <Compile Include="IProductService1.cs" />
-    <Compile Include="Project.DataTypes\Entities\IEntity.cs" />
+    <Compile Include="DataTypes\ComplexType\ProductDetail.cs" />
+    <Compile Include="DataTypes\ComplexType\ProductFilter.cs" />
+    <Compile Include="DataTypes\Entities\Category.cs" />
+    <Compile Include="DataTypes\Entities\Product.cs" />
+    <Compile Include="DataTypes\Entities\User.cs" />
+    <Compile Include="IProjectService.cs" />
+    <Compile Include="DataTypes\Entities\IEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -9,7 +9,7 @@ using Project.Shared.DataTypes.Entities;
 namespace Project.Shared
 {
     [ServiceContract()]
-    public interface IProductService1
+    public interface IProjectService
     {
         [OperationContract()]
         Product GetById(int v);

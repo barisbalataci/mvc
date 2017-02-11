@@ -11,12 +11,12 @@ using Project.Shared;
 
 namespace Project.Server
 {
-    public class ProductService1 :IProductService1
+    public class ProjectService : IProjectService
     {
         private readonly IProductService _productService;
         //private readonly UnitWork unit;
 
-        public ProductService1()
+        public ProjectService()
         {
             _productService = InstanceFactory<IProductService>.GetInstance();
             //unit= new UnitWork();
