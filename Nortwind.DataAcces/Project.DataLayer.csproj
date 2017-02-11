@@ -49,15 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\ICategoryDal.cs" />
-    <Compile Include="Abstract\IProductDal.cs" />
-    <Compile Include="Abstract\IUserDal.cs" />
-    <Compile Include="Concrete\EntityFramework\Contexts\NortwindContext.cs" />
-    <Compile Include="Concrete\EntityFramework\EfCategoryDal.cs" />
-    <Compile Include="Concrete\EntityFramework\EfEntitityRepositoryBase.cs" />
-    <Compile Include="Concrete\EntityFramework\EfProductDal.cs" />
-    <Compile Include="Concrete\EntityFramework\EfUserDal.cs" />
-    <Compile Include="Abstract\IEntityRepository.cs" />
+    <Compile Include="DataAccess\Abstract\ICategoryDal.cs" />
+    <Compile Include="DataAccess\Abstract\IProductDal.cs" />
+    <Compile Include="DataAccess\Abstract\IUserDal.cs" />
+    <Compile Include="DataAccess\Concrete\EntityFramework\Contexts\NortwindContext.cs" />
+    <Compile Include="DataAccess\Concrete\EntityFramework\EfCategoryDal.cs" />
+    <Compile Include="DataAccess\Concrete\EntityFramework\EfEntitityRepositoryBase.cs" />
+    <Compile Include="DataAccess\Concrete\EntityFramework\EfProductDal.cs" />
+    <Compile Include="DataAccess\Concrete\EntityFramework\EfUserDal.cs" />
+    <Compile Include="DataAccess\Abstract\IEntityRepository.cs" />
+    <Compile Include="Mappings\CategoryMap.cs" />
+    <Compile Include="Mappings\ProductMap.cs" />
+    <Compile Include="Mappings\UserMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
