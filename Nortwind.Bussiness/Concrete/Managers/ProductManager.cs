@@ -14,11 +14,11 @@ namespace Project.Root.Concrete.Managers
     public class ProductManager : IProductService
     {
         IProductDal _productDal;
-        private UnitOfWorks.UnitWork unit;
+        
         public ProductManager(IProductDal productDal)
         {
             _productDal = productDal;
-            unit = new UnitOfWorks.UnitWork();
+            
         }
         public void Add(Product product)
         {
@@ -70,8 +70,8 @@ namespace Project.Root.Concrete.Managers
 
         public Product GetById(int id)
         {
-            return unit.ProductRepository.Get(m => m.Id == id);
-            //return _productDal.Get(p => p.Id == id);
+           
+            return _productDal.Get(p => p.Id == id);
         }
 
         public List<Product> GetByProductName(string productName)

@@ -6,12 +6,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Project.Root.UnitOfWorks;
+using Project.Root.Concrete;
 using Project.Shared;
 
 namespace Project.Server
 {
-    public class ProductService1 :UnitWork ,IProductService1
+    public class ProductService1 :IProductService1
     {
         private readonly IProductService _productService;
         //private readonly UnitWork unit;
@@ -20,7 +20,10 @@ namespace Project.Server
         {
             _productService = InstanceFactory<IProductService>.GetInstance();
             //unit= new UnitWork();
-           
+            
+             
+
+
         }
      
         public Product GetById(int id)
