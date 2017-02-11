@@ -30,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\Nortwind.Bussiness\bin\Debug\EntityFramework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.ServiceModel" />
@@ -51,9 +48,6 @@
     <Compile Include="Project.DataTypes\Entities\User.cs" />
     <Compile Include="IProductService1.cs" />
     <Compile Include="Project.DataTypes\Entities\IEntity.cs" />
-    <Compile Include="Project.DataTypes\Mappings\CategoryMap.cs" />
-    <Compile Include="Project.DataTypes\Mappings\ProductMap.cs" />
-    <Compile Include="Project.DataTypes\Mappings\UserMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
