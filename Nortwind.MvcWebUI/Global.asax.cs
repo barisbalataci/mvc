@@ -23,7 +23,7 @@ namespace Nortwind.MvcWebUI
 
             FluentValidationModelValidatorProvider.Configure(provider =>
             {
-                provider.ValidatorFactory = new FlentValitorFactory();
+                provider.ValidatorFactory = new FluentValitorFactory();
                 provider.AddImplicitRequiredValidator = false;
             });
 

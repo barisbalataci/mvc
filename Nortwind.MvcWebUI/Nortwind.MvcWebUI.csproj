@@ -209,7 +209,7 @@
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="DependencyResolver\NinjectControllerFactory.cs" />
-    <Compile Include="DependencyResolver\FlentValitorFactory.cs" />
+    <Compile Include="DependencyResolver\FluentValitorFactory.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

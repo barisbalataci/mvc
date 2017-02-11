@@ -75,7 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Nortwind.DataAcces\Project.DataLayer.csproj">
-      <Project>{966F79A9-005E-4C9A-A7C2-106330F9BA0E}</Project>
+      <Project>{966f79a9-005e-4c9a-a7c2-106330f9ba0e}</Project>
       <Name>Project.DataLayer</Name>
     </ProjectReference>
     <ProjectReference Include="..\Nortwind.Entities\Project.Shared.csproj">

@@ -7,7 +7,7 @@ using Project.Root.Concrete;
 
 namespace Project.Root.DependencyResolver.Ninject
 {
-    class BusinessModule:NinjectModule
+    public class BusinessModule:NinjectModule
     {
         public override void Load()
         {

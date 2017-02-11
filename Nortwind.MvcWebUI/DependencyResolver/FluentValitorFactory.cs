@@ -6,10 +6,10 @@ using System;
 
 namespace Nortwind.MvcWebUI.DependencyResolver
 {
-    public class FlentValitorFactory:ValidatorFactoryBase
+    public class FluentValitorFactory:ValidatorFactoryBase
     {
         private IKernel _kernel;
-        public FlentValitorFactory()
+        public FluentValitorFactory()
         {
             _kernel = new StandardKernel();
             _kernel.Bind<IValidator<Product>>().To<ProductValidator>().InSingletonScope();
