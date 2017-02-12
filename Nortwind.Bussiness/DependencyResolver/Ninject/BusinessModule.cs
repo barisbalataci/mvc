@@ -4,6 +4,7 @@ using Project.Root.Abstract;
 using Project.DataLayer.Abstract;
 using Project.DataLayer.Concrete.EntityFramework;
 using Project.Root.Concrete;
+using Project.Shared;
 
 namespace Project.Root.DependencyResolver.Ninject
 {
@@ -11,7 +12,7 @@ namespace Project.Root.DependencyResolver.Ninject
     {
         public override void Load()
         {
-            Bind<IServiceBase>().To<ServiceBase>().InSingletonScope();
+            Bind<IServiceBase>().To<ServiceBase>().InSingletonScope();           
             //Bind<IProductService>().To<ProductManager>().InSingletonScope();
             //Bind<ICategoryService>().To<CategoryManager>().InSingletonScope();
             //Bind<ILanguageService>().To<LanguageManager>().InSingletonScope();
