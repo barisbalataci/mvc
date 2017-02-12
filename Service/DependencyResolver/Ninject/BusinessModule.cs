@@ -13,7 +13,7 @@ namespace Project.Server.DependencyResolver.Ninject
         public override void Load()
         {
             Bind<IProjectService>().To<ProjectService>().InSingletonScope();
-            Bind<IServiceBase>().To<ServiceBase>().InSingletonScope();           
+            Bind<IServiceBase>().To<ServiceBaseEF>().InSingletonScope();           
             //Bind<IProductService>().To<ProductManager>().InSingletonScope();
             //Bind<ICategoryService>().To<CategoryManager>().InSingletonScope();
             //Bind<ILanguageService>().To<LanguageManager>().InSingletonScope();

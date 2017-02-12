@@ -10,17 +10,18 @@ using System.Data;
 using System.Transactions;
 using Project.Root.Abstract;
 using Project.Root;
+using Project.DataLayer.Abstract;
 
 namespace Project.Root.Concrete
 {
-    public class ServiceBase : IServiceBase
+    public class ServiceBaseEF : IServiceBase
     {
         private NortwindContext _context;
-        private EfCategoryDal _categoryDal;
-        private EfProductDal _productDal;
-        private EfUserDal _UserDal;
+        private ICategoryDal _categoryDal;
+        private IProductDal _productDal;
+        private IUserDal _UserDal;
        
-        public EfCategoryDal CategoryDAL
+        public ICategoryDal CategoryDAL
         {
             get
             {
@@ -29,7 +30,7 @@ namespace Project.Root.Concrete
                 return _categoryDal;
             }
         }
-        public EfProductDal ProductDAL
+        public IProductDal ProductDAL
         {
             get
             {
@@ -39,7 +40,7 @@ namespace Project.Root.Concrete
             }
         }
 
-        public EfUserDal UserDAL
+        public IUserDal UserDAL
         {
             get
             {
