@@ -6,12 +6,13 @@ using Project.DataLayer.Concrete.EntityFramework;
 using Project.Root.Concrete;
 using Project.Shared;
 
-namespace Project.Root.DependencyResolver.Ninject
+namespace Project.Server.DependencyResolver.Ninject
 {
     public class BusinessModule:NinjectModule
     {
         public override void Load()
         {
+            Bind<IProjectService>().To<ProjectService>().InSingletonScope();
             Bind<IServiceBase>().To<ServiceBase>().InSingletonScope();           
             //Bind<IProductService>().To<ProductManager>().InSingletonScope();
             //Bind<ICategoryService>().To<CategoryManager>().InSingletonScope();

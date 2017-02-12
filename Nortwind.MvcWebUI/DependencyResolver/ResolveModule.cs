@@ -2,7 +2,7 @@
 using System.Configuration;
 using Ninject;
 using Ninject.Modules;
-using Project.Root.DependencyResolver.Ninject;
+using Project.Server.DependencyResolver.Ninject;
 
 namespace DevFramework.Business.DependencyResolvers.Ninject
 {

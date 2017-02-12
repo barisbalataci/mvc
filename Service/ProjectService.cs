@@ -1,5 +1,4 @@
 ﻿using Project.Root.Abstract;
-using Project.Root.DependencyResolver.Ninject;
 using Project.Shared.DataTypes.Entities;
 using System;
 using System.Collections.Generic;
@@ -10,6 +9,7 @@ using Project.Root.Concrete;
 using Project.Shared;
 using Project.Root.ValidationRules.FluentValidation;
 using Project.Shared.DataTypes.ComplexType;
+using Project.Server.DependencyResolver.Ninject;
 
 namespace Project.Server
 {

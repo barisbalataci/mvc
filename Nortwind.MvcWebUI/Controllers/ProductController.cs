@@ -8,7 +8,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Project.Shared;
-using Project.Root.DependencyResolver.Ninject;
+
 
 namespace Nortwind.MvcWebUI.Controllers
 {

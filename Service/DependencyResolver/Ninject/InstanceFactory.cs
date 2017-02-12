@@ -1,6 +1,6 @@
 ﻿using Ninject;
 
-namespace Project.Root.DependencyResolver.Ninject
+namespace Project.Server.DependencyResolver.Ninject
 {
     public class InstanceFactory<T>
     {
