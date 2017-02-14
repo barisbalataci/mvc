@@ -15,7 +15,7 @@ namespace Project.DataLayer.Mappings
             HasKey(t => t.Id);
             Property(t => t.ProductName).IsRequired().HasMaxLength(40);
             Property(t => t.QuantityPerUnit).HasMaxLength(20);
-
+           
             ToTable("Products");
             Property(t => t.Id).HasColumnName("ProductID");
             Property(t => t.ProductName).HasColumnName("ProductName");

@@ -93,8 +93,7 @@ namespace Project.Server
 
         public void Update(Product product)
         {
-            FluentValidatorTool.Validate(new ProductValidator(), product);
-            //ProductNameCheck(product);
+            FluentValidatorTool.Validate(new ProductValidator(), product);            
             _session.ProductDAL.Update(product);
         }
 
