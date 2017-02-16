@@ -97,7 +97,7 @@ namespace Project.Server
             _session.ProductDAL.Update(product);
         }
 
-        public List<Category> GetAll()
+        public List<Category> GetAllCategories()
         {
             return _session.CategoryDAL.GetList();
         }

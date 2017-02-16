@@ -14,8 +14,12 @@ namespace Project.Client
     {
         static void Main(string[] args)
         {
-           Product  product= WcfProxy<IProjectService>.CreateChannel().GetById(1);
-            Console.WriteLine(product.ProductName);
+           List<Product>  products= WcfProxy<IProjectService>.CreateChannel().GetAll(new Shared.DataTypes.ComplexType.ProductFilter());
+            products.ForEach(p =>
+            {
+                Console.WriteLine(string.Format("Product Name: {0} , Category : {1} ",p.ProductName,p.Category));
+            });
+            
             Console.ReadLine();
         }
     }

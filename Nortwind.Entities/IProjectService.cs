@@ -30,7 +30,7 @@ namespace Project.Shared
         [OperationContract()]
         int GetProductsCountByCategory(int? categoryId);
         //[OperationContract()]
-        List<Category> GetAll();
+        List<Category> GetAllCategories();
         [OperationContract()]
         User GetByUserNameAndPassword(User user);
     }

@@ -52,7 +52,7 @@ namespace Nortwind.MvcWebUI.Controllers
         {
             return View(new ProductAddViewModel
             {                
-                Categories = _pService.GetAll().Select(item=>new SelectListItem()
+                Categories = _pService.GetAllCategories().Select(item=>new SelectListItem()
                 { Text=item.CategoryName,Value=item.Id.ToString()}).ToList()
             });
         }
@@ -72,7 +72,7 @@ namespace Nortwind.MvcWebUI.Controllers
             return View(new ProductAddViewModel
             {
                 Product= _pService.GetById(id),
-                Categories = _pService.GetAll().Select(item => new SelectListItem()
+                Categories = _pService.GetAllCategories().Select(item => new SelectListItem()
                 { Text = item.CategoryName, Value = item.Id.ToString() }).ToList()
             });
         }

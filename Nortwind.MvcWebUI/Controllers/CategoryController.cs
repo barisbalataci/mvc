@@ -21,7 +21,7 @@ namespace Nortwind.MvcWebUI.Controllers
 
             return PartialView(new CategoryListViewModel
             {
-                Categories = _pService.GetAll(),
+                Categories = _pService.GetAllCategories(),
                 CurrentCategory= categoryId
 
             });
