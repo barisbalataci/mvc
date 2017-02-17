@@ -16,6 +16,8 @@ namespace Project.Shared
         [OperationContract()]
         List<Product> GetAll(ProductFilter productFilter);
         [OperationContract()]
+        List<Customer> GetCustomerList();
+        [OperationContract()]
         Product GetById(int id);
         [OperationContract()]
         List<Product> GetByCategory(int categoryId);

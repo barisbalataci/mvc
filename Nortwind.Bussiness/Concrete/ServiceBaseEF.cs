@@ -10,7 +10,8 @@ using System.Data;
 using System.Transactions;
 using Project.Root.Abstract;
 using Project.Root;
-using Project.DataLayer.Abstract;
+
+using Project.DataLayer.DataAccess.Abstract;
 
 namespace Project.Root.Concrete
 {
@@ -20,6 +21,7 @@ namespace Project.Root.Concrete
         private ICategoryDal _categoryDal;
         private IProductDal _productDal;
         private IUserDal _UserDal;
+        private ICustomerDal _customerDal;
        
         public ICategoryDal CategoryDAL
         {
@@ -47,6 +49,15 @@ namespace Project.Root.Concrete
                 if (_UserDal == null)
                     _UserDal = new EfUserDal();
                 return _UserDal;
+            }
+        }
+        public ICustomerDal CustomerDal
+        {
+            get
+            {
+                if (_customerDal == null)
+                    _customerDal = new EfCustomerDal();
+                return _customerDal;
             }
         }
 

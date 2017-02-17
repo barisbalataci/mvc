@@ -1,0 +1,50 @@
+﻿<Window x:Class="Project.WPFConsole.View.Customers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project.WPFConsole.View"
+        mc:Ignorable="d"
+        Title="Customer" Height="300" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DataGrid Name="DgrCustomers" Grid.Column="0" Grid.Row="0" AutoGenerateColumns="True"
+                  ItemsSource="{Binding Customers}"></DataGrid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock FontStyle="Oblique" Grid.Row="0" Grid.Column="0" Text="Customer Id:"></TextBlock>
+            <TextBlock FontStyle="Oblique" Grid.Row="0" Grid.Column="2" Text="Contact Name:"></TextBlock>
+            <TextBlock FontStyle="Oblique" Grid.Row="0" Grid.Column="4" Text="Company Name:"></TextBlock>
+            <TextBlock FontStyle="Oblique" Grid.Row="1" Grid.Column="0" Text="City:"></TextBlock>
+            <TextBlock FontStyle="Oblique" Grid.Row="1" Grid.Column="2" Text="Country:"></TextBlock>
+            <TextBox Name="TbxCustomerId" Grid.Row="0" Grid.Column="1" Text="{Binding ElementName=DgrCustomers, Path=SelectedItem.CustomerID}"></TextBox>
+            <TextBox Name="TbxContactName" Grid.Row="0" Grid.Column="3" Text="{Binding ElementName=DgrCustomers, Path=SelectedItem.ContactName}"></TextBox>
+            <TextBox Name="TbxCompanyName" Grid.Row="0" Grid.Column="5" Text="{Binding ElementName=DgrCustomers, Path=SelectedItem.CompanyName}"></TextBox>
+            <TextBox Name="TbxCity" Grid.Row="1" Grid.Column="1" Text="{Binding ElementName=DgrCustomers, Path=SelectedItem.City}"></TextBox>
+            <TextBox Name="TbxCountry" Grid.Row="1" Grid.Column="3" Text="{Binding ElementName=DgrCustomers, Path=SelectedItem.Country}"></TextBox>
+            <Button Grid.Row="2" Grid.Column="4" 
+                    Content="Update" Name="BtnUpdate" Click="Btn_Update_OnClick" Margin="0,0,0,65"/>
+            <Button Grid.Row="2" Grid.Column="5" Height="25" VerticalAlignment="Top" 
+                    Content="Add" Name="BtnInsert" Click="BtnInsert_OnClick"></Button>
+        </Grid>
+
+    </Grid>
+</Window>

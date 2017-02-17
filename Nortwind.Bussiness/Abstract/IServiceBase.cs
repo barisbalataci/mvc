@@ -1,4 +1,4 @@
-﻿using Project.DataLayer.Abstract;
+﻿using Project.DataLayer.DataAccess.Abstract;
 using Project.DataLayer.Concrete.EntityFramework;
 using Project.DataLayer.Concrete.EntityFramework.Contexts;
 using System;
@@ -14,6 +14,8 @@ namespace Project.Root.Abstract
         IProductDal ProductDAL { get; }
         ICategoryDal CategoryDAL { get; }
         IUserDal UserDAL { get; }
+
+        ICustomerDal CustomerDal { get; }
         NortwindContext Context { get; }
         void SaveAll();
     }

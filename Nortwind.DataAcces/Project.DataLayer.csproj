@@ -52,10 +52,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\Abstract\ICategoryDal.cs" />
+    <Compile Include="DataAccess\Abstract\ICustomerDal.cs" />
     <Compile Include="DataAccess\Abstract\IProductDal.cs" />
     <Compile Include="DataAccess\Abstract\IUserDal.cs" />
     <Compile Include="DataAccess\Concrete\EntityFramework\Contexts\NortwindContext.cs" />
     <Compile Include="DataAccess\Concrete\EntityFramework\EfCategoryDal.cs" />
+    <Compile Include="DataAccess\Concrete\EntityFramework\EfCustomerDal.cs" />
     <Compile Include="DataAccess\Concrete\EntityFramework\EfEntitityRepositoryBase.cs" />
     <Compile Include="DataAccess\Concrete\EntityFramework\EfProductDal.cs" />
     <Compile Include="DataAccess\Concrete\EntityFramework\EfUserDal.cs" />

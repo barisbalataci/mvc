@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.DataLayer.Abstract
+namespace Project.DataLayer.DataAccess.Abstract
 {
     public interface ICategoryDal:IEntityRepository<Category>
     {

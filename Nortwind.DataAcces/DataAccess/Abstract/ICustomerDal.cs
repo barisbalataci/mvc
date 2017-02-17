@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project.DataLayer.DataAccess.Abstract
 {
-    public interface IUserDal:IEntityRepository<User>
+    public interface ICustomerDal:IEntityRepository<Customer>
     {
     }
 }

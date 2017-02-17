@@ -107,6 +107,13 @@ namespace Project.Server
             return _session.UserDAL.Get(u => u.UserName == user.UserName && u.Password == user.Password);
         }
 
+        //Customers
+        public List<Customer> GetCustomerList()
+        {
+            return _session.CustomerDal.GetList();
+
+        }
+
 
 
     }

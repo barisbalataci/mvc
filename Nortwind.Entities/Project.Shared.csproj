@@ -45,6 +45,8 @@
     <Compile Include="DataTypes\ComplexType\ProductDetail.cs" />
     <Compile Include="DataTypes\ComplexType\ProductFilter.cs" />
     <Compile Include="DataTypes\Entities\Category.cs" />
+    <Compile Include="DataTypes\Entities\Customer.cs" />
+    <Compile Include="DataTypes\Entities\Order.cs" />
     <Compile Include="DataTypes\Entities\Product.cs" />
     <Compile Include="DataTypes\Entities\User.cs" />
     <Compile Include="IProjectService.cs" />

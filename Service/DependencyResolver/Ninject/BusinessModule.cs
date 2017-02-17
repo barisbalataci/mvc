@@ -1,10 +1,10 @@
 ﻿using Ninject.Modules;
 using Project.Root.Abstract;
-
-using Project.DataLayer.Abstract;
+using Project.DataLayer.DataAccess;
 using Project.DataLayer.Concrete.EntityFramework;
 using Project.Root.Concrete;
 using Project.Shared;
+using Project.DataLayer.DataAccess.Abstract;
 
 namespace Project.Server.DependencyResolver.Ninject
 {

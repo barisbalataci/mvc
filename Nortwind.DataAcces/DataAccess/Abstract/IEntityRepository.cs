@@ -6,8 +6,8 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.DataLayer.Abstract
-{
+namespace Project.DataLayer.DataAccess.Abstract
+{ 
     public interface IEntityRepository<T> where T : class, IEntity, new()
     {
         T Get(Expression<Func<T, bool>> filter);

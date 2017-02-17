@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Client", "Nortwind.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.ServerHost", "Project.ServerHost\Project.ServerHost.csproj", "{9C17BAEB-C93B-4825-B53C-2F8F0264D21C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.WPFConsole", "Project.WPFConsole\Project.WPFConsole.csproj", "{3A39C722-C2F0-4BB7-AC9E-D3F8AE64833E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{9C17BAEB-C93B-4825-B53C-2F8F0264D21C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C17BAEB-C93B-4825-B53C-2F8F0264D21C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C17BAEB-C93B-4825-B53C-2F8F0264D21C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A39C722-C2F0-4BB7-AC9E-D3F8AE64833E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A39C722-C2F0-4BB7-AC9E-D3F8AE64833E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A39C722-C2F0-4BB7-AC9E-D3F8AE64833E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A39C722-C2F0-4BB7-AC9E-D3F8AE64833E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
