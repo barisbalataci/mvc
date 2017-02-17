@@ -8,11 +8,11 @@ namespace Project.Shared.DataTypes.Entities
 {
     public class Customer:IEntity
     {
-        //public Customer()
-        //{
-        //    this.Orders = new List<Order>();
-          
-        //}
+        public Customer()
+        {
+            this.Orders = new List<Order>();
+
+        }
 
         public string CustomerID { get; set; }
         public string CompanyName { get; set; }
